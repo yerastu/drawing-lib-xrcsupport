@@ -1,281 +1,240 @@
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local TweenService = game:GetService("TweenService")
+local plrs = game:GetService("Players")
+local rs = game:GetService("RunService")
+local uis = game:GetService("UserInputService")
 
-local CoreGui = (RunService:IsStudio() and Players.LocalPlayer:WaitForChild("PlayerGui")) or game:GetService("CoreGui")
+local uiTarget = (rs:IsStudio() and plrs.LocalPlayer:WaitForChild("PlayerGui")) or game:GetService("CoreGui")
+print("Drawing XRC Api Supported: 100%")
 
-local function showCheckingSupportUI()
-	local checkGui = Instance.new("ScreenGui")
-	checkGui.Name = "DrawingSupportCheck"
-	checkGui.DisplayOrder = 2147483647
-	checkGui.IgnoreGuiInset = true
-	checkGui.Parent = CoreGui
-
-	local frame = Instance.new("Frame")
-	frame.AnchorPoint = Vector2.new(0, 1)
-	frame.Position = UDim2.new(0, 20, 1, -20)
-	frame.Size = UDim2.new(0, 250, 0, 40)
-	frame.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
-	frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
-	frame.BorderSizePixel = 2
-	frame.Parent = checkGui
-
-	local label = Instance.new("TextLabel")
-	label.Size = UDim2.new(1, 0, 1, 0)
-	label.BackgroundTransparency = 1
-	label.Text = "Checking Support..."
-	label.TextColor3 = Color3.fromRGB(0, 0, 0)
-	label.Font = Enum.Font.Legacy
-	label.TextSize = 14
-	label.Parent = frame
-
-	task.spawn(function()
-		task.wait(0.6)
-		label.Text = "Drawing XRC Api Supported: 100%"
-		label.TextColor3 = Color3.fromRGB(0, 120, 0)
-		task.wait(1.5)
-
-		local tInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-		TweenService:Create(frame, tInfo, {BackgroundTransparency = 1}):Play()
-		TweenService:Create(label, tInfo, {TextTransparency = 1}):Play()
-
-		task.wait(0.5)
-		checkGui:Destroy()
-	end)
+local box = uiTarget:FindFirstChild("DrawAPI")
+if not box then
+	box = Instance.new("ScreenGui")
+	box.Name = "DrawAPI"
+	box.DisplayOrder = 2147483646
+	box.IgnoreGuiInset = true
+	box.ResetOnSpawn = false
+	box.Parent = uiTarget
 end
 
-showCheckingSupportUI()
-
-local DrawingContainer = CoreGui:FindFirstChild("DrawingAPI_Container")
-if not DrawingContainer then
-	DrawingContainer = Instance.new("ScreenGui")
-	DrawingContainer.Name = "DrawingAPI_Container"
-	DrawingContainer.DisplayOrder = 2147483646
-	DrawingContainer.IgnoreGuiInset = true
-	DrawingContainer.ResetOnSpawn = false
-	DrawingContainer.Parent = CoreGui
-end
-
-local Drawing = {}
-Drawing.Fonts = {
+local Draw = {}
+Draw.Fonts = {
 	UI = 0,
 	System = 1,
 	Plex = 2,
 	Monospace = 3
 }
 
-local FontMap = {
+local fonts = {
 	[0] = Enum.Font.SourceSans,
 	[1] = Enum.Font.Arial,
 	[2] = Enum.Font.RobotoMono,
 	[3] = Enum.Font.Code
 }
 
-function Drawing.new(drawType)
-	local properties = {
+function Draw.new(kind)
+	local props = {
 		Visible = false,
-		Color = Color3.fromRGB(0, 0, 0),
+		Color = Color3.new(0, 0, 0),
 		Transparency = 1,
 		ZIndex = 1
 	}
 
-	local instance
-	local subInstances = {} 
+	local ui
+	local parts = {} 
 	
-	if drawType == "Line" then
-		properties.Thickness = 1
-		properties.From = Vector2.new(0, 0)
-		properties.To = Vector2.new(0, 0)
+	if kind == "Line" then
+		props.Thickness = 1
+		props.From = Vector2.zero
+		props.To = Vector2.zero
 		
-		instance = Instance.new("Frame")
-		instance.BorderSizePixel = 0
-		instance.AnchorPoint = Vector2.new(0.5, 0.5)
+		ui = Instance.new("Frame")
+		ui.BorderSizePixel = 0
+		ui.AnchorPoint = Vector2.new(0.5, 0.5)
 		
-	elseif drawType == "Text" then
-		properties.Text = ""
-		properties.Size = 16
-		properties.Center = false
-		properties.Outline = false
-		properties.OutlineColor = Color3.fromRGB(0, 0, 0)
-		properties.Position = Vector2.new(0, 0)
-		properties.Font = Drawing.Fonts.UI
-		properties.TextBounds = Vector2.new(0, 0)
+	elseif kind == "Text" then
+		props.Text = ""
+		props.Size = 16
+		props.Center = false
+		props.Outline = false
+		props.OutlineColor = Color3.new(0, 0, 0)
+		props.Position = Vector2.zero
+		props.Font = Draw.Fonts.UI
+		props.TextBounds = Vector2.zero
 		
-		instance = Instance.new("TextLabel")
-		instance.BackgroundTransparency = 1
+		ui = Instance.new("TextLabel")
+		ui.BackgroundTransparency = 1
 		
-	elseif drawType == "Circle" then
-		properties.Thickness = 1
-		properties.NumSides = 0
-		properties.Radius = 0
-		properties.Filled = false
-		properties.Position = Vector2.new(0, 0)
+	elseif kind == "Circle" then
+		props.Thickness = 1
+		props.NumSides = 0
+		props.Radius = 0
+		props.Filled = false
+		props.Position = Vector2.zero
 		
-		instance = Instance.new("Frame")
-		instance.AnchorPoint = Vector2.new(0.5, 0.5)
-		local corner = Instance.new("UICorner", instance)
-		corner.CornerRadius = UDim.new(1, 0)
-		local stroke = Instance.new("UIStroke", instance)
-		stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+		ui = Instance.new("Frame")
+		ui.AnchorPoint = Vector2.new(0.5, 0.5)
+		local round = Instance.new("UICorner", ui)
+		round.CornerRadius = UDim.new(1, 0)
+		local line = Instance.new("UIStroke", ui)
+		line.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 		
-	elseif drawType == "Square" then
-		properties.Thickness = 1
-		properties.Size = Vector2.new(0, 0)
-		properties.Position = Vector2.new(0, 0)
-		properties.Filled = false
-		properties.Rounding = 0 
+	elseif kind == "Square" then
+		props.Thickness = 1
+		props.Size = Vector2.zero
+		props.Position = Vector2.zero
+		props.Filled = false
+		props.Rounding = 0 
 		
-		instance = Instance.new("Frame")
-		local stroke = Instance.new("UIStroke", instance)
-		stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-		local corner = Instance.new("UICorner", instance)
-		corner.Name = "UICorner"
+		ui = Instance.new("Frame")
+		local line = Instance.new("UIStroke", ui)
+		line.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+		local round = Instance.new("UICorner", ui)
+		round.Name = "UICorner"
 		
-	elseif drawType == "Triangle" then
-		properties.Thickness = 1
-		properties.PointA = Vector2.new(0, 0)
-		properties.PointB = Vector2.new(0, 0)
-		properties.PointC = Vector2.new(0, 0)
-		properties.Filled = false
+	elseif kind == "Triangle" then
+		props.Thickness = 1
+		props.PointA = Vector2.zero
+		props.PointB = Vector2.zero
+		props.PointC = Vector2.zero
+		props.Filled = false
 		
-		instance = Instance.new("Folder")
+		ui = Instance.new("Folder")
 		for i = 1, 3 do
-			local line = Instance.new("Frame")
-			line.BorderSizePixel = 0
-			line.AnchorPoint = Vector2.new(0.5, 0.5)
-			line.Parent = DrawingContainer
-			subInstances[i] = line
+			local l = Instance.new("Frame")
+			l.BorderSizePixel = 0
+			l.AnchorPoint = Vector2.new(0.5, 0.5)
+			l.Parent = box
+			parts[i] = l
 		end
 
-	elseif drawType == "Quad" then
-		properties.Thickness = 1
-		properties.PointA = Vector2.new(0, 0)
-		properties.PointB = Vector2.new(0, 0)
-		properties.PointC = Vector2.new(0, 0)
-		properties.PointD = Vector2.new(0, 0)
-		properties.Filled = false
+	elseif kind == "Quad" then
+		props.Thickness = 1
+		props.PointA = Vector2.zero
+		props.PointB = Vector2.zero
+		props.PointC = Vector2.zero
+		props.PointD = Vector2.zero
+		props.Filled = false
 		
-		instance = Instance.new("Folder")
+		ui = Instance.new("Folder")
 		for i = 1, 4 do
-			local line = Instance.new("Frame")
-			line.BorderSizePixel = 0
-			line.AnchorPoint = Vector2.new(0.5, 0.5)
-			line.Parent = DrawingContainer
-			subInstances[i] = line
+			local l = Instance.new("Frame")
+			l.BorderSizePixel = 0
+			l.AnchorPoint = Vector2.new(0.5, 0.5)
+			l.Parent = box
+			parts[i] = l
 		end
 
-	elseif drawType == "Image" then
-		properties.Size = Vector2.new(0, 0)
-		properties.Position = Vector2.new(0, 0)
-		properties.Data = ""
-		properties.Rounding = 0 
+	elseif kind == "Image" then
+		props.Size = Vector2.zero
+		props.Position = Vector2.zero
+		props.Data = ""
+		props.Rounding = 0 
 		
-		instance = Instance.new("ImageLabel")
-		instance.BackgroundTransparency = 1
-		instance.BorderSizePixel = 0
-		local corner = Instance.new("UICorner", instance)
-		corner.Name = "UICorner"
+		ui = Instance.new("ImageLabel")
+		ui.BackgroundTransparency = 1
+		ui.BorderSizePixel = 0
+		local round = Instance.new("UICorner", ui)
+		round.Name = "UICorner"
 	end
 	
-	if instance and drawType ~= "Triangle" and drawType ~= "Quad" then
-		instance.Parent = DrawingContainer
+	if ui and kind ~= "Triangle" and kind ~= "Quad" then
+		ui.Parent = box
 	end
 	
-	local function updateRender()
-		if not instance or (instance.ClassName ~= "Folder" and not instance.Parent) then return end
+	local function update()
+		if not ui or (ui.ClassName ~= "Folder" and not ui.Parent) then return end
 		
-		local robloxTransparency = 1 - properties.Transparency
+		local alpha = 1 - props.Transparency
 		
-		if drawType == "Line" then
-			instance.Visible = properties.Visible
-			instance.BackgroundColor3 = properties.Color
-			instance.BackgroundTransparency = robloxTransparency
+		if kind == "Line" then
+			ui.Visible = props.Visible
+			ui.BackgroundColor3 = props.Color
+			ui.BackgroundTransparency = alpha
 			
-			local mid = (properties.From + properties.To) / 2
-			local dist = (properties.To - properties.From).Magnitude
-			local angle = math.deg(math.atan2(properties.To.Y - properties.From.Y, properties.To.X - properties.From.X))
+			local mid = (props.From + props.To) / 2
+			local dist = (props.To - props.From).Magnitude
+			local angle = math.deg(math.atan2(props.To.Y - props.From.Y, props.To.X - props.From.X))
 			
-			instance.Position = UDim2.new(0, mid.X, 0, mid.Y)
-			instance.Size = UDim2.new(0, dist, 0, properties.Thickness)
-			instance.Rotation = angle
-			instance.ZIndex = properties.ZIndex
+			ui.Position = UDim2.new(0, mid.X, 0, mid.Y)
+			ui.Size = UDim2.new(0, dist, 0, props.Thickness)
+			ui.Rotation = angle
+			ui.ZIndex = props.ZIndex
 			
-		elseif drawType == "Text" then
-			instance.Visible = properties.Visible
-			instance.TextColor3 = properties.Color
-			instance.TextTransparency = robloxTransparency
-			instance.Text = properties.Text
-			instance.TextSize = properties.Size
-			instance.Font = FontMap[properties.Font] or Enum.Font.SourceSans
+		elseif kind == "Text" then
+			ui.Visible = props.Visible
+			ui.TextColor3 = props.Color
+			ui.TextTransparency = alpha
+			ui.Text = props.Text
+			ui.TextSize = props.Size
+			ui.Font = fonts[props.Font] or Enum.Font.SourceSans
 			
-			instance.TextStrokeTransparency = properties.Outline and robloxTransparency or 1
-			instance.TextStrokeColor3 = properties.OutlineColor
+			ui.TextStrokeTransparency = props.Outline and alpha or 1
+			ui.TextStrokeColor3 = props.OutlineColor
 			
-			if properties.Center then
-				instance.AnchorPoint = Vector2.new(0.5, 0)
+			if props.Center then
+				ui.AnchorPoint = Vector2.new(0.5, 0)
 			else
-				instance.AnchorPoint = Vector2.new(0, 0)
+				ui.AnchorPoint = Vector2.new(0, 0)
 			end
-			instance.Position = UDim2.new(0, properties.Position.X, 0, properties.Position.Y)
-			instance.Size = UDim2.new(0, 0, 0, 0)
-			properties.TextBounds = instance.TextBounds
-			instance.ZIndex = properties.ZIndex
+			ui.Position = UDim2.new(0, props.Position.X, 0, props.Position.Y)
+			ui.Size = UDim2.new(0, 0, 0, 0)
+			props.TextBounds = ui.TextBounds
+			ui.ZIndex = props.ZIndex
 			
-		elseif drawType == "Circle" then
-			instance.Visible = properties.Visible
-			instance.Position = UDim2.new(0, properties.Position.X, 0, properties.Position.Y)
-			instance.Size = UDim2.new(0, properties.Radius * 2, 0, properties.Radius * 2)
-			instance.ZIndex = properties.ZIndex
+		elseif kind == "Circle" then
+			ui.Visible = props.Visible
+			ui.Position = UDim2.new(0, props.Position.X, 0, props.Position.Y)
+			ui.Size = UDim2.new(0, props.Radius * 2, 0, props.Radius * 2)
+			ui.ZIndex = props.ZIndex
 			
-			local stroke = instance:FindFirstChildOfClass("UIStroke")
-			if properties.Filled then
-				instance.BackgroundTransparency = robloxTransparency
-				instance.BackgroundColor3 = properties.Color
-				if stroke then stroke.Transparency = 1 end
+			local line = ui:FindFirstChildOfClass("UIStroke")
+			if props.Filled then
+				ui.BackgroundTransparency = alpha
+				ui.BackgroundColor3 = props.Color
+				if line then line.Transparency = 1 end
 			else
-				instance.BackgroundTransparency = 1
-				if stroke then
-					stroke.Transparency = robloxTransparency
-					stroke.Color = properties.Color
-					stroke.Thickness = properties.Thickness
+				ui.BackgroundTransparency = 1
+				if line then
+					line.Transparency = alpha
+					line.Color = props.Color
+					line.Thickness = props.Thickness
 				end
 			end
 			
-		elseif drawType == "Square" then
-			instance.Visible = properties.Visible
-			instance.Position = UDim2.new(0, properties.Position.X, 0, properties.Position.Y)
-			instance.Size = UDim2.new(0, properties.Size.X, 0, properties.Size.Y)
-			instance.ZIndex = properties.ZIndex
+		elseif kind == "Square" then
+			ui.Visible = props.Visible
+			ui.Position = UDim2.new(0, props.Position.X, 0, props.Position.Y)
+			ui.Size = UDim2.new(0, props.Size.X, 0, props.Size.Y)
+			ui.ZIndex = props.ZIndex
 			
-			if instance:FindFirstChild("UICorner") then
-				instance.UICorner.CornerRadius = UDim.new(0, properties.Rounding)
+			if ui:FindFirstChild("UICorner") then
+				ui.UICorner.CornerRadius = UDim.new(0, props.Rounding)
 			end
 			
-			local stroke = instance:FindFirstChildOfClass("UIStroke")
-			if properties.Filled then
-				instance.BackgroundTransparency = robloxTransparency
-				instance.BackgroundColor3 = properties.Color
-				if stroke then stroke.Transparency = 1 end
+			local line = ui:FindFirstChildOfClass("UIStroke")
+			if props.Filled then
+				ui.BackgroundTransparency = alpha
+				ui.BackgroundColor3 = props.Color
+				if line then line.Transparency = 1 end
 			else
-				instance.BackgroundTransparency = 1
-				if stroke then
-					stroke.Transparency = robloxTransparency
-					stroke.Color = properties.Color
-					stroke.Thickness = properties.Thickness
+				ui.BackgroundTransparency = 1
+				if line then
+					line.Transparency = alpha
+					line.Color = props.Color
+					line.Thickness = props.Thickness
 				end
 			end
 			
-		elseif drawType == "Triangle" then
-			local pts = {properties.PointA, properties.PointB, properties.PointC}
-			local nextPts = {properties.PointB, properties.PointC, properties.PointA}
+		elseif kind == "Triangle" then
+			local pts = {props.PointA, props.PointB, props.PointC}
+			local nextPts = {props.PointB, props.PointC, props.PointA}
 			
 			for i = 1, 3 do
-				local line = subInstances[i]
-				if line then
-					line.Visible = properties.Visible
-					line.BackgroundColor3 = properties.Color
-					line.BackgroundTransparency = robloxTransparency
-					line.ZIndex = properties.ZIndex
+				local l = parts[i]
+				if l then
+					l.Visible = props.Visible
+					l.BackgroundColor3 = props.Color
+					l.BackgroundTransparency = alpha
+					l.ZIndex = props.ZIndex
 					
 					local p1 = pts[i]
 					local p2 = nextPts[i]
@@ -284,23 +243,23 @@ function Drawing.new(drawType)
 					local dist = (p2 - p1).Magnitude
 					local angle = math.deg(math.atan2(p2.Y - p1.Y, p2.X - p1.X))
 					
-					line.Position = UDim2.new(0, mid.X, 0, mid.Y)
-					line.Size = UDim2.new(0, dist, 0, properties.Thickness)
-					line.Rotation = angle
+					l.Position = UDim2.new(0, mid.X, 0, mid.Y)
+					l.Size = UDim2.new(0, dist, 0, props.Thickness)
+					l.Rotation = angle
 				end
 			end
 
-		elseif drawType == "Quad" then
-			local pts = {properties.PointA, properties.PointB, properties.PointC, properties.PointD}
-			local nextPts = {properties.PointB, properties.PointC, properties.PointD, properties.PointA}
+		elseif kind == "Quad" then
+			local pts = {props.PointA, props.PointB, props.PointC, props.PointD}
+			local nextPts = {props.PointB, props.PointC, props.PointD, props.PointA}
 			
 			for i = 1, 4 do
-				local line = subInstances[i]
-				if line then
-					line.Visible = properties.Visible
-					line.BackgroundColor3 = properties.Color
-					line.BackgroundTransparency = robloxTransparency
-					line.ZIndex = properties.ZIndex
+				local l = parts[i]
+				if l then
+					l.Visible = props.Visible
+					l.BackgroundColor3 = props.Color
+					l.BackgroundTransparency = alpha
+					l.ZIndex = props.ZIndex
 					
 					local p1 = pts[i]
 					local p2 = nextPts[i]
@@ -309,60 +268,54 @@ function Drawing.new(drawType)
 					local dist = (p2 - p1).Magnitude
 					local angle = math.deg(math.atan2(p2.Y - p1.Y, p2.X - p1.X))
 					
-					line.Position = UDim2.new(0, mid.X, 0, mid.Y)
-					line.Size = UDim2.new(0, dist, 0, properties.Thickness)
-					line.Rotation = angle
+					l.Position = UDim2.new(0, mid.X, 0, mid.Y)
+					l.Size = UDim2.new(0, dist, 0, props.Thickness)
+					l.Rotation = angle
 				end
 			end
 
-		elseif drawType == "Image" then
-			instance.Visible = properties.Visible
-			instance.ImageTransparency = robloxTransparency
-			instance.Image = properties.Data
-			instance.Size = UDim2.new(0, properties.Size.X, 0, properties.Size.Y)
-			instance.Position = UDim2.new(0, properties.Position.X, 0, properties.Position.Y)
-			instance.ZIndex = properties.ZIndex
+		elseif kind == "Image" then
+			ui.Visible = props.Visible
+			ui.ImageTransparency = alpha
+			ui.Image = props.Data
+			ui.Size = UDim2.new(0, props.Size.X, 0, props.Size.Y)
+			ui.Position = UDim2.new(0, props.Position.X, 0, props.Position.Y)
+			ui.ZIndex = props.ZIndex
 			
-			if instance:FindFirstChild("UICorner") then
-				instance.UICorner.CornerRadius = UDim.new(0, properties.Rounding)
+			if ui:FindFirstChild("UICorner") then
+				ui.UICorner.CornerRadius = UDim.new(0, props.Rounding)
 			end
 		end
 	end
 
 	local obj = {}
 	function obj:Remove()
-		if instance then
-			instance:Destroy()
-			instance = nil
+		if ui then
+			ui:Destroy()
+			ui = nil
 		end
-		for _, sub in ipairs(subInstances) do
-			if sub then sub:Destroy() end
+		for _, part in ipairs(parts) do
+			if part then part:Destroy() end
 		end
 	end
 	
 	setmetatable(obj, {
 		__index = function(self, key)
-			if key == "Remove" then
-				return obj.Remove
-			end
-			if drawType == "Text" and key == "TextBounds" and instance then
-				return instance.TextBounds
-			end
-			return properties[key]
+			if key == "Remove" then return obj.Remove end
+			if kind == "Text" and key == "TextBounds" and ui then return ui.TextBounds end
+			return props[key]
 		end,
 		__newindex = function(self, key, value)
-			if properties[key] ~= nil or key == "Thickness" or key == "ZIndex" or key == "Rounding" then
-				properties[key] = value
-				updateRender()
+			if props[key] ~= nil or key == "Thickness" or key == "ZIndex" or key == "Rounding" then
+				props[key] = value
+				update()
 			end
 		end
 	})
 	
-	updateRender()
+	update()
 	return obj
 end
 
 getgenv = getgenv or function() return _G end
-getgenv().Drawing = Drawing
-
-return Drawing
+getgenv().Drawing = Draw
