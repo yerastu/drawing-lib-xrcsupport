@@ -15,36 +15,28 @@ local function showCheckingSupportUI()
 	frame.AnchorPoint = Vector2.new(0, 1)
 	frame.Position = UDim2.new(0, 20, 1, -20)
 	frame.Size = UDim2.new(0, 250, 0, 40)
-	frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-	frame.BackgroundTransparency = 0.1
+	frame.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+	frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	frame.BorderSizePixel = 2
 	frame.Parent = checkGui
-
-	local corner = Instance.new("UICorner", frame)
-	corner.CornerRadius = UDim.new(0, 6)
-
-	local stroke = Instance.new("UIStroke", frame)
-	stroke.Color = Color3.fromRGB(100, 100, 100)
-	stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-	stroke.Thickness = 1
 
 	local label = Instance.new("TextLabel")
 	label.Size = UDim2.new(1, 0, 1, 0)
 	label.BackgroundTransparency = 1
 	label.Text = "Checking Support..."
-	label.TextColor3 = Color3.fromRGB(255, 255, 255)
-	label.Font = Enum.Font.GothamMedium
+	label.TextColor3 = Color3.fromRGB(0, 0, 0)
+	label.Font = Enum.Font.Legacy
 	label.TextSize = 14
 	label.Parent = frame
 
 	task.spawn(function()
 		task.wait(0.6)
 		label.Text = "Drawing XRC Api Supported: 100%"
-		label.TextColor3 = Color3.fromRGB(80, 255, 80)
+		label.TextColor3 = Color3.fromRGB(0, 120, 0)
 		task.wait(1.5)
 
-		local tInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
 		TweenService:Create(frame, tInfo, {BackgroundTransparency = 1}):Play()
-		TweenService:Create(stroke, tInfo, {Transparency = 1}):Play()
 		TweenService:Create(label, tInfo, {TextTransparency = 1}):Play()
 
 		task.wait(0.5)
@@ -54,10 +46,10 @@ end
 
 showCheckingSupportUI()
 
-local DrawingContainer = CoreGui:FindFirstChild("YeraDrawingSystem")
+local DrawingContainer = CoreGui:FindFirstChild("DrawingSystemContainer")
 if not DrawingContainer then
 	DrawingContainer = Instance.new("ScreenGui")
-	DrawingContainer.Name = "YeraDrawingSystem"
+	DrawingContainer.Name = "DrawingSystemContainer"
 	DrawingContainer.DisplayOrder = 2147483646
 	DrawingContainer.IgnoreGuiInset = true
 	DrawingContainer.ResetOnSpawn = false
