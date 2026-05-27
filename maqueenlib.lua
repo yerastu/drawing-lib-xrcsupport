@@ -1,4 +1,3 @@
-
 local MaQueen = {}
 local TS = game:GetService("TweenService")
 local UIS = game:GetService("UserInputService")
