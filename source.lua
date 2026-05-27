@@ -46,10 +46,10 @@ end
 
 showCheckingSupportUI()
 
-local DrawingContainer = CoreGui:FindFirstChild("DrawingSystemContainer")
+local DrawingContainer = CoreGui:FindFirstChild("DrawingAPI_Container")
 if not DrawingContainer then
 	DrawingContainer = Instance.new("ScreenGui")
-	DrawingContainer.Name = "DrawingSystemContainer"
+	DrawingContainer.Name = "DrawingAPI_Container"
 	DrawingContainer.DisplayOrder = 2147483646
 	DrawingContainer.IgnoreGuiInset = true
 	DrawingContainer.ResetOnSpawn = false
