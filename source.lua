@@ -3,7 +3,6 @@ local rs = game:GetService("RunService")
 local uis = game:GetService("UserInputService")
 
 local uiTarget = (rs:IsStudio() and plrs.LocalPlayer:WaitForChild("PlayerGui")) or game:GetService("CoreGui")
-print("Drawing XRC Api Supported: 100%")
 
 local box = uiTarget:FindFirstChild("DrawAPI")
 if not box then
@@ -146,16 +145,23 @@ function Draw.new(kind)
 		local alpha = 1 - props.Transparency
 		
 		if kind == "Line" then
+			local thick = props.Thickness
+			local renderThick = math.max(1, math.round(thick))
+			local renderTrans = alpha
+			if thick < 1 and thick > 0 then
+				renderTrans = 1 - (props.Transparency * thick)
+			end
+
 			ui.Visible = props.Visible
 			ui.BackgroundColor3 = props.Color
-			ui.BackgroundTransparency = alpha
+			ui.BackgroundTransparency = renderTrans
 			
 			local mid = (props.From + props.To) / 2
 			local dist = (props.To - props.From).Magnitude
 			local angle = math.deg(math.atan2(props.To.Y - props.From.Y, props.To.X - props.From.X))
 			
-			ui.Position = UDim2.new(0, mid.X, 0, mid.Y)
-			ui.Size = UDim2.new(0, dist, 0, props.Thickness)
+			ui.Position = UDim2.fromOffset(mid.X, mid.Y)
+			ui.Size = UDim2.fromOffset(dist, renderThick)
 			ui.Rotation = angle
 			ui.ZIndex = props.ZIndex
 			
@@ -175,15 +181,15 @@ function Draw.new(kind)
 			else
 				ui.AnchorPoint = Vector2.new(0, 0)
 			end
-			ui.Position = UDim2.new(0, props.Position.X, 0, props.Position.Y)
-			ui.Size = UDim2.new(0, 0, 0, 0)
+			ui.Position = UDim2.fromOffset(props.Position.X, props.Position.Y)
+			ui.Size = UDim2.fromOffset(0, 0)
 			props.TextBounds = ui.TextBounds
 			ui.ZIndex = props.ZIndex
 			
 		elseif kind == "Circle" then
 			ui.Visible = props.Visible
-			ui.Position = UDim2.new(0, props.Position.X, 0, props.Position.Y)
-			ui.Size = UDim2.new(0, props.Radius * 2, 0, props.Radius * 2)
+			ui.Position = UDim2.fromOffset(props.Position.X, props.Position.Y)
+			ui.Size = UDim2.fromOffset(props.Radius * 2, props.Radius * 2)
 			ui.ZIndex = props.ZIndex
 			
 			local line = ui:FindFirstChildOfClass("UIStroke")
@@ -194,16 +200,22 @@ function Draw.new(kind)
 			else
 				ui.BackgroundTransparency = 1
 				if line then
-					line.Transparency = alpha
+					local thick = props.Thickness
+					local renderTrans = alpha
+					if thick < 1 and thick > 0 then
+						renderTrans = 1 - (props.Transparency * thick)
+						thick = 1
+					end
+					line.Transparency = renderTrans
 					line.Color = props.Color
-					line.Thickness = props.Thickness
+					line.Thickness = thick
 				end
 			end
 			
 		elseif kind == "Square" then
 			ui.Visible = props.Visible
-			ui.Position = UDim2.new(0, props.Position.X, 0, props.Position.Y)
-			ui.Size = UDim2.new(0, props.Size.X, 0, props.Size.Y)
+			ui.Position = UDim2.fromOffset(props.Position.X, props.Position.Y)
+			ui.Size = UDim2.fromOffset(props.Size.X, props.Size.Y)
 			ui.ZIndex = props.ZIndex
 			
 			if ui:FindFirstChild("UICorner") then
@@ -218,47 +230,36 @@ function Draw.new(kind)
 			else
 				ui.BackgroundTransparency = 1
 				if line then
-					line.Transparency = alpha
+					local thick = props.Thickness
+					local renderTrans = alpha
+					if thick < 1 and thick > 0 then
+						renderTrans = 1 - (props.Transparency * thick)
+						thick = 1
+					end
+					line.Transparency = renderTrans
 					line.Color = props.Color
-					line.Thickness = props.Thickness
+					line.Thickness = thick
 				end
 			end
 			
-		elseif kind == "Triangle" then
-			local pts = {props.PointA, props.PointB, props.PointC}
-			local nextPts = {props.PointB, props.PointC, props.PointA}
+		elseif kind == "Triangle" or kind == "Quad" then
+			local count = kind == "Triangle" and 3 or 4
+			local pts = kind == "Triangle" and {props.PointA, props.PointB, props.PointC} or {props.PointA, props.PointB, props.PointC, props.PointD}
+			local nextPts = kind == "Triangle" and {props.PointB, props.PointC, props.PointA} or {props.PointB, props.PointC, props.PointD, props.PointA}
 			
-			for i = 1, 3 do
-				local l = parts[i]
-				if l then
-					l.Visible = props.Visible
-					l.BackgroundColor3 = props.Color
-					l.BackgroundTransparency = alpha
-					l.ZIndex = props.ZIndex
-					
-					local p1 = pts[i]
-					local p2 = nextPts[i]
-					
-					local mid = (p1 + p2) / 2
-					local dist = (p2 - p1).Magnitude
-					local angle = math.deg(math.atan2(p2.Y - p1.Y, p2.X - p1.X))
-					
-					l.Position = UDim2.new(0, mid.X, 0, mid.Y)
-					l.Size = UDim2.new(0, dist, 0, props.Thickness)
-					l.Rotation = angle
-				end
+			local thick = props.Thickness
+			local renderThick = math.max(1, math.round(thick))
+			local renderTrans = alpha
+			if thick < 1 and thick > 0 then
+				renderTrans = 1 - (props.Transparency * thick)
 			end
 
-		elseif kind == "Quad" then
-			local pts = {props.PointA, props.PointB, props.PointC, props.PointD}
-			local nextPts = {props.PointB, props.PointC, props.PointD, props.PointA}
-			
-			for i = 1, 4 do
+			for i = 1, count do
 				local l = parts[i]
 				if l then
 					l.Visible = props.Visible
 					l.BackgroundColor3 = props.Color
-					l.BackgroundTransparency = alpha
+					l.BackgroundTransparency = renderTrans
 					l.ZIndex = props.ZIndex
 					
 					local p1 = pts[i]
@@ -268,8 +269,8 @@ function Draw.new(kind)
 					local dist = (p2 - p1).Magnitude
 					local angle = math.deg(math.atan2(p2.Y - p1.Y, p2.X - p1.X))
 					
-					l.Position = UDim2.new(0, mid.X, 0, mid.Y)
-					l.Size = UDim2.new(0, dist, 0, props.Thickness)
+					l.Position = UDim2.fromOffset(mid.X, mid.Y)
+					l.Size = UDim2.fromOffset(dist, renderThick)
 					l.Rotation = angle
 				end
 			end
@@ -278,8 +279,8 @@ function Draw.new(kind)
 			ui.Visible = props.Visible
 			ui.ImageTransparency = alpha
 			ui.Image = props.Data
-			ui.Size = UDim2.new(0, props.Size.X, 0, props.Size.Y)
-			ui.Position = UDim2.new(0, props.Position.X, 0, props.Position.Y)
+			ui.Size = UDim2.fromOffset(props.Size.X, props.Size.Y)
+			ui.Position = UDim2.fromOffset(props.Position.X, props.Position.Y)
 			ui.ZIndex = props.ZIndex
 			
 			if ui:FindFirstChild("UICorner") then
@@ -301,7 +302,7 @@ function Draw.new(kind)
 	
 	setmetatable(obj, {
 		__index = function(self, key)
-			if key == "Remove" then return obj.Remove end
+			if key == "Remove" or key == "Destroy" then return obj.Remove end
 			if kind == "Text" and key == "TextBounds" and ui then return ui.TextBounds end
 			return props[key]
 		end,
