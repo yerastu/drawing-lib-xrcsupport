@@ -1,6 +1,82 @@
 
 return {
     Main = {
+        ["Drowning Love"] = {
+            Normal = [[
+6 0 e r t o 5 w r t
+r w 4 w r t r w 1 8
+r t y o 6 0 e r t o
+5 w r t r w 4 w r t
+r w 1 8 r t y o e u
+p a s h w o a s a o
+q o a s a o 8 t a s
+d h e u p a s h w o
+a s a o q o a s a o
+8 t a s d h 6 0 e r
+t o 5 w r t r w 4 w
+r t g w 1 8 r t y o
+[6wtu] 0 e [rfhlx] t o 5 w r t
+r w 4 w r t r w 1 8
+r t 8 q [ex] k [uj] p a s
+h w o a s a o q o a
+s a o 8 t a s d h e
+u p a s h w o a s a
+o q o a s a o 8 t a
+s d h [4wtu] [wtu] 8 [wtu] 4 [wty] [8wtu]
+[4wty] [4wtu] [4wt] 8 [wr] [8wtl] j f [30r] t
+y o y t [rhjz] t y o y t
+[30r] t y o y t [3p] y t r
+t y [4wtu] [wtu] 8 [wtu] 4 [wty] [8wtu] [4wty]
+[4wtu] [4wt] 8 [wr] [8wtl] j f [30r] t y
+o y t [rhjz] t y o y t [30r]
+t y o y t [3p] y t r t
+y [qosf] [osf] t [osf] q [osd] [tosf] [qosd] [qosf]
+[qos] t [oa] [tosx] l h [30a] s d h
+d s [ahjz] s d h d s [30a] s
+d [hk] d s [uj] d s a s d
+[qosf] [osf] t [osf] q [osd] [tosf] [qosd] [qosf] [qos]
+t [oa] [tosx] l h [30a] s d h d
+s [ahjz] s d h d s [30a] s d
+[hk] d s [uj] d s a s d [qosf]
+[osf] t [osf] q [osd] [tosf] [qosd] [qosf] [qos] t
+[oa] [tosx] l h [30a] s d h d s
+[ahjz] s d h d s [30a] s d [hk]
+d s [3aj] d s [3h] s d [ex] k
+[uj] p a s h w o a s a
+o q o a s a o 8 t a
+s d h [ex] k [uj] p a s h
+w o a s a o q o a s
+a o 8 t a s d h 6 0
+e [ruf] t o 5 w r [toh] r w
+4 w r [toh] r w 1 8 r [toh]
+y o 6 0 e [ruf] t o 5 w
+r [toh] r w 4 [tu] p d a p
+a s w u s d a p a [yg]
+[5u] p s d a p a s 0 u
+s d a p a o d f a [6u]
+p d a p a s 0 d f k
+a p a [of] [5u] p s d a p
+a [0o] d a p a [8q] w t [ygDJ]
+Y o [^P] o Y [@s] o Y [%d] P
+o [@D] [@P] o [5g] P o [2h] P o
+8 w t [ygDJ] Y o [^P] o Y [@s]
+o Y [%d] P o [@D] [@P] o [5g] P
+o [2d] P o [18] d [5D] J [1D] P
+^ P [4D] h [^D] P [%H] D [@P] h
+[%D] P [@g] d [^P] h [@d] P [18z] J
+[5h] Z [1J] h [^c] J [4h] v [^J] h
+[%Z] J [@D] Z [%J] D [@Z] J [^D] Z
+[@J] D [18] w [5t] y [1Y] P ^ w
+[4y] Y [^y] E % ( [@y] Y [%y] E
+@ Y [^y] Y [@o] P [18] w [5t] y
+[1Y] P ^ w [%y] Y [^y] E % W
+[@y] Y [%y] E [@(] Y [^y] Y [(o] P
+[18] o [5s] d [1D] J ^ o [4d] D
+[^d] P % Y [@d] D [%d] P [@(] Y
+[^d] D [(h] J [18] o [5s] d [1D] J
+[^P] h [4z] Z [^z] J [%Dsgh]
+            ]]
+        },
         ["Let it go but hard."] = {
             Normal = [[
 [8epTu] [8epTu] T Y [8epTu]
