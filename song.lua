@@ -1,6 +1,37 @@
 
 return {
     Main = {
+        ["Gravity Falls Main Title Theme"] = {
+            Normal = [[
+g d p d g d p d 
+g s p s g s p s 
+f S p S f S p S 
+f S p S f S j-
+[9d]---f-
+g----
+[qj] - h h-j-
+s----
+[^d]---f-
+g--f--
+[8h]--j--
+[6h]--g--
+9-g-g-g-
+j-j-h-g-
+q-j-j-j-
+h-j-h-g-
+^-g-g-g-
+j-j-h-g-
+8-j-j-j-
+6-L-L-L-
+9-g-g-g-
+[qj]-j-h-g-
+^-J-J-J-
+[8h]--l--
+[6j]--L--
+[9gz] d p d f S p S 
+d--[dz]
+            ]]
+        },
         ["Despacito"] = {
             Normal = [[
 uos ua|up||
