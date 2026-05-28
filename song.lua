@@ -1,6 +1,96 @@
 
 return {
     Main = {
+        ["Let it go but hard."] = {
+            Normal = [[
+[8epTu] [8epTu] T Y [8epTu]
+[6epQS] T [6epQS] Y [%TWY]
+[8epTu] p G G f D [ST]
+[6eQST] a S [6efQT] S [%STWY]
+
+[8epTu][6epQS]
+[%TWY][8epTu]
+[6epQS][%TWY]
+[8epTu][8epTu]
+
+o p s d f G H
+[epTu]---[epTu]
+[epQST]-[epQST]
+[TWY]-[TWY]
+[adgj]-[adgj]
+
+[13579qwe]
+[24680asd]
+[qwertyui]
+[asdfghj]
+[zxcvbnm]
+
+[8etuosf] [8etuosf]
+[7wryoad] [7wryoad]
+[6epstuf] [6epstuf]
+[%TWYadh] [%TWYadh]
+
+[epTu] p p p G G
+f D [ST]-[eQST]
+a S [efQT] S
+[STWY]----[STWY]
+
+[8epTu][6epQS][%TWY]
+[8epTu][6epQS][%TWY]
+[qetupasdf]
+[zxcvbnmQWER]
+[13579qweasd]
+[24680tyugh]
+
+LLLLL
+z x c v b
+LLLLL
+z x c v b
+
+[epTu]-Y-T-[epTu]
+[eQST]-a-S-[eQST]
+[efQT]-S-[STWY]
+[TWY]-[TWY]-[TWY]
+
+[1234567890qwerty]
+[asdfghjklzxcvbnm]
+[qazwsxedcrfvtgby]
+[plmoknijbuhvygct]
+
+[8epTu][8epTu][6epQS]
+[%TWY][%TWY][8epTu]
+[6epQS][6epQS][%TWY]
+[qazwsxedc][rfvtgbyhn]
+
+f G H J K L
+L K J H G f
+[epTu][epTu][epTu]
+[TWY][TWY][TWY]
+[eQST][eQST]
+[adgj][adgj]
+
+[1234567890qwertyuiop]
+[asdfghjklzxcvbnm]
+[qazwsxedcrfvtgbyhnujm]
+[plmoknijbuhvygctfxrdzeswaq]
+
+LET IT GOOOOOOOOOOOOOO
+
+[8epTu][6epQS][%TWY][8epTu]
+[qwertyuiopasdfgh]
+[zxcvbnm1234567890]
+[qazwsxedcrfvtgbyhn]
+[plmoknijbuhvygctfx]
+
+[epTu][epTu][epTu][epTu]
+[TWY][TWY][TWY][TWY]
+[eQST][eQST][eQST]
+[adgj][adgj][adgj]
+
+[1234567890qwertyuiopasdfghjkl]
+[zxcvbnmQWERTYUIOPASDFGHJKL]
+            ]]
+        },
         ["Impossible song"] = {
             Normal = [[
 [8etu] [8etu] [8etu] [3ryw] [3ryw]
