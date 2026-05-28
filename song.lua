@@ -1,6 +1,194 @@
 
 return {
     Main = {
+        ["Wish --- trippie red"] = {
+            Normal = [[
+[9df]-S-9--
+9-9-[7aS]-p-
+7--7-7p-
+[$oO]-u-[$T]--$-
+$p-[oO]$-u-[$T]--
+$-$-[9df]-S-
+9--9-9-[7aS]-
+p-7--7-7
+p-O[$o]-u-[$T]--$-
+$p-[$oO]-u-[$T]--
+$-$-[9df]-
+S-9--9-9-
+[7aS]-pS-a [7p]OO-[7p]-
+a7-$-S-a[$p]OO-
+p$-a $-$-S-
+a[$p]-O-[$p]-a$-9-
+S-a9pOO-[9p]-a9-
+7-uO-O[7O]OO-
+[7u]uu 7-$-uO-O[$O]
+OO-[$u]uu$-$-u-
+O-I$--$-f[$f]f-
+[9f]-f-[9S]--[9f]-
+[9f]-[7f]-f-[7S]--
+[7f]-[7f]-[$f]-f-
+S$--f$-f$-[$f]-
+f-[$S]--[$f]-
+f$-[9H]-H-[9f]--
+[9f]-[9f]-[7H]-H-
+[7f]--[7f]-[7f]-[$H]-
+H-[$f]--[$f]-f$-
+H$-H-f$--$-
+$G-9-S-a[9p]O
+O-[9p]-a9-7-S-
+a[7p]OO-[7p]-a7-
+$-IS-a [$p]O-[$p]-a
+$-$-IS-a[$p]OO-
+[$p]-a $-9-S-a
+[9p]-O-[9p]-a9-7-
+S-ap7OO-[7p]-a7-
+$-uO-O[$O]O-[$u]
+uu $-$-u-O-[$I]--
+$-$----
+[29fIpS]-S-[29]--
+[29]-[29]-[7p][Iy]-p-
+[7]--[7]-[7]p-
+[$oTu]-u-[$T]$--[$]-
+[$]p-[$oTu]-u-[$T]--
+[$]-$$-[29DfIpS]-S-
+92--[29]-[29]-[7Ipy]-
+p-[7]--[7]-[7] 
+p-[$oTu]-u-[$T]--[$]-
+$$p-[$eoTu]-u-[$T]$--
+[$]-[$]-[29fIpS]-S-
+[29]--92-92-
+p[7y]-pS-a[7p]O-O[7p]-
+a[7]-[$IT]$-TS-ap[$]OO-
+[$p]-a[$]-T[$I]-TS-
+a[$p]OO-[$p]-a [$]-[pS][29Iy]-
+yS-a[29p]OO-[29p]-a[29]
+y-[7Ir]-yS-a[7p]OO-
+[7p]-a[7]T-[$I]-TS-a[$p]
+OO-[$p]-a [$]T-I[$]-T
+S-a[$p]OO-[$p]-f[$f]f-
+[29fIpS]-f-[9S]2--[9f]2-
+[29f]-[7fpS]-f-[7S]--
+[7f]-[7f]-[fIpS][$]-f-
+[$S]--[$f]-[$f]-[$fIpS]-
+f-[$S]$--f[$]-f[$]-
+[29fHpS]-H-[29f]--
+[29fpS]-[29fpS]-[7fHpS]-H-7
+[7f]--[7fpS]-[7fpS]-[$fHpS]-
+H-[$f]--[$fpS]-[fpS][$]-
+S[$fHp]-H-[$fpS]--[$G]-
+[$]-[29GIpSy]-yS-a[9p]2O
+O-[29p]-a[29]y-[7r]-[$y]S-
+a[7p]OO-[7p]-a[7]T-[$I]-
+TS-a[$p]OO-[$p]-a
+[$]T-[$I]-TS-ap[$]O O-
+[$p]-a[$]-[29Ipy]-yS-a
+[29p]OO-[29p]-a92y-[Ir]7-
+yS-a[7p]OO-[7p]-a[7]T-
+[$I]-TS-ap[$]O O-[$p]-
+a[$]T-[$I]-TS-a[$p]O
+O-[$p]-a$$----
+[$29eQTuY]-T----
+e[7QrT]-e----
+e-[*$6]-
+0-*----
+[6e]-[*$6w]-0-*----
+S[29fIp]-S-
+[29]--[29]-[29]-[7apy]-p
+[pS]-a [7p]OO-[7p]-a[7]p-
+[$Tu]-[Su]-a[$pT]OO-[$p]-
+a [$]p-[$Tu]-[Su]-a[$pT]-
+O-[$p]-a[$]-[29DfIpS]-S-
+a[9p]2OO-[29p]-a[29]-[7Ipy]-
+u[Op]-O[7O]OO-[7u]uu
+[7]p-u[$oT]-u [Ou]-O[$T]OO-
+[$u]uu[$]p-[$oTu]-uuO-
+[$IT]$--[$]-f[$f]f-[29fIpS]-
+f-S--f-f-
+[7fp]-f-S--f-
+f-[$efoTu]-u-[ST]--
+f-f p-[$efoTu]-u-
+[ST]--f-f-
+[9fHIpS]2-[HS]-9[2f]--[29f]-
+[29f]-[7fH]-[HS]-[7f]--
+[7f]-[7f]7-[$eoTu]-[Hu]-
+[$fT]--[$f]-[$f]p-[$eHoTu]-
+[Hu]-[$fT]--[$]-[$]
+G-[29efIpS]-S-a[29p]OO-[29p]-
+a92-p[7Iy]-[pS]-a[7p]
+OO-[7p]-a[7]p-[$eoTu]-I[Su]-
+aT[$p]O-[$p]-a[$]p-
+[$eoTu]-I[Su]-a[$pT]OO-[$p]-
+a [$]-[9S][2DfIp]-S-ap-O-
+p-a--[7aIpy]-[pS]-
+a[7p]OO-[7p]-a[7]p-[$oTu]-
+u[Ou]-O[$T]O-[$u]$uu [$]
+p-[$u][$oT]-uu O-[$IT]--
+[$]-[$]-[29IpSu]----
+H-H-S[7HIpy]-
+f----H-H-
+[$HTu]-[fu]-T--H-
+H-[$eHoTu]-[fu]-T--
+G-H-[29fIpS]-S-
+[29]--[29]-[29]-[7fpS]-
+S-77--[7]-[7]-
+[$eoTu]-u-[$T]$--
+[$]-[$]p-[$eoTu]-u-
+[$T]--[$]-[$]-[29fIpS]-
+S-92--92-[29]-
+[7fpS]-pS-a[7p]OO-[7p]-
+a[7]-[$eoTu]-[Su]-a[$pT]O
+O-[$p]-a[$]p-[$eoTu]-[Su]-
+a[$pT]$-O-[$p]-a[$]-[29fIpS]-
+S-apOO-p-a--
+[fIS][7p]-uO-OOOO-
+uuu--[$eoTu]-u[Ou]-O
+[OT]OO-uu u--[3oSy]-
+u-O-I-[6eopSu]----
+[9IpSy]2p----
+[7Ip]77uO-[$O]O
+OO-uuu--[$eTu]-u
+[Ou]-O[OT]OO-uuu--
+[3oSy]3-u-O-I-[opSu][6]----
+[29IpSy]----
+            ]]
+        },
+        ["Changes - xxx"] = {
+            Normal = [[
+[aru]-a-a-a-
+[aT]-a-a-a-
+[aW]-a-a-a-
+a-a r a rrYTrE
+[aru] r a r [ar] T [ar] E 
+[arT] r a r [ar] T [ar] E 
+[arW] r a r [ar] T [ar] E 
+[ar] r a r a rr[aY]TrE
+[0aru] r a r [ar] T [ar] E 
+[*arT] r a r [ar] T [ar] E 
+[%arW] r a r [ar] T [ar] E 
+[ar] r a r a rrYTrE
+[aru] r a rr[ar]TYYa Tr
+[aT]-a rr[ar]TYYa Tr
+[aW]-a rr[ar]TYYa Tr
+[au]-a-a-a-
+[aT]-a rr[ar]TYYa Tr
+[aW]-a rr[ar]TYYa Tr
+a-a rr[ar]TYYa Tr
+a-a r a rr[aY]TrE
+[0ar] r a r [ar] T [ar] E 
+[*ar] r a r [ar] T [ar] E 
+[%ar] r a r [ar] T [ar] E 
+[ar]-a r a rr[aY]TrE
+[0aru] r a r [ar] T [ar] E 
+[*arT] r a r [ar] T [ar] E 
+[%arW] r a r [ar] T [ar] E 
+[ar]-a-a rr[aY]TrE
+[aru] r a r [ar] T [ar] E 
+[arT] r a r [ar] T [ar] E 
+[arW] r a r [ar] T [ar] E 
+a-a r a rr[aY]TrE
+r r----
+            ]]
+        },
         ["SAD -- XXXTENTACION"] = {
             Normal = [[
 [otWY]----
