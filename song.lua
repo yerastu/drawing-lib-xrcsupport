@@ -1,6 +1,29 @@
 
 return {
     Main = {
+        ["Impossible song"] = {
+            Normal = [[
+[8etu] [8etu] [8etu] [3ryw] [3ryw]
+[579adg] [579adg] [248sfh]
+[qetup] [qetup] [qetup]
+[7wryos] [7wryos]
+[1234567890qwerty]
+[asdfghjklzxcvbnm]
+[qwe][rty][uio][pas][dfg][hjk]
+[13579][24680][qet][yui][asd]
+[8epstuz] [8epstuz] [8epstuz]
+[1234567890]
+[qwertyuiopasdf]
+[zxcvbnmQWERT]
+[159qwe][260asd][37rfgh]
+[qweryuiopasdfghjkl]
+[zxcvbnm123456789]
+[qpwoeirutyalskdj]
+[123qweasd][456rtyfgh]
+[qazwsxedcrfvtgby]
+[plmoknijbuhvygct]
+            ]]
+        },
         ["Wish --- trippie red"] = {
             Normal = [[
 [9df]-S-9--
