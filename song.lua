@@ -1,6 +1,191 @@
 
 return {
     Main = {
+        ["Bazooka"] = {
+            Normal = [[
+[aDW]----
+[DPQ]----
+[0OS]----
+[*Pu]----
+[(rW]----
+D--S 
+[(EQ]--a a a S 
+D S a a a a a O 
+[*0DW] S----a 
+S----a 
+[*0DE] S----a 
+S----
+[(rW]--a a a S 
+D S a a a a a O 
+[(DEQ] S--a a a S 
+D S a a a a a O 
+[*0DW] S----a 
+S----a 
+[*0DE] S----a 
+S--a a D S 
+[(arW]-a a a a a O 
+D S--a a D S 
+[(aEQ]-a a a a a O 
+D S----a S 
+[*0SW]----a S 
+S----a a 
+[*0EP] P----u u 
+Y----
+[(rW]----
+[(EQ]----
+[*0W]----
+[*0E]----
+[(rW]----D D 
+G-D D D D S D 
+[(EQS]-a--D D 
+G-D D D D S D 
+[*0SW]-a--D D 
+G-D D D S D S 
+[*0E]----D D D 
+G-D D D S D D 
+[(rW]-a-a a a S 
+D S a a a a a O 
+[(DEQ] S--a a a S 
+D S a a a a a O 
+[*0DW] S----a 
+S----a 
+[*0DE] S----a 
+S--a a D S 
+[(arW]-a a a a a O 
+D S--a a D S 
+[(aEQ]-a a a a a O 
+D S----a S 
+[*0SW]----a S 
+S----a a 
+[*0EP] P----u u 
+Y----
+[aDW]----
+[DPQ]----
+[0OS]----
+[*Pu]----
+            ]]
+        },
+        ["I DO ME"] = {
+            Normal = [[
+[gq]-[gt]-gi-
+fdwdydo-sd[ef]-[fu]-
+[fp]-ds8s wst-ss
+[gq]-[gt]-[gi]-fdwdydo-
+sd[ef]-[fu]-[fp]-ds8--
+[fs]-ds[4s]-[8ad]-[adeq]--
+5-9-[frsw]-ds[6s]-[0fs]-
+[efst]--8-[8sw]-[fstu]-s-
+[4ad]-8-[adeq]--5[ad]-[9os]-[orsw]-
+[fs]-6-[0os]-[et]-[ao]-8-
+[osw]-[fstu]-ds[4s]-[ad]8-[adeq]--
+5-9-[fsw]r-ds[6s]-[0fs]-
+[efst]--8-[sw]-[fstu]-s-[4ad]-
+8-[4adeq]--[5ad]-[9os]-[orsw]-
+[fs]-6-[0os]-[et]-[ao]-8-[osw]-
+[tu]--[2fo]69----
+5[9di]w----6[0fo]e----
+8[dkw]t-[fl]--2[fo]d69--
+[hs]--5[9di]w--[fo]-
+6[0s]ep-pp-h-g-
+f-ds[4gs]-[8gs]-[gs][eq]-[8fs][adq]5
+[ad]9[ad][rw]-[9s]d6[fs]-[0fs]-[fstw]-
+[ad]0[os]8[os]w[os][tu]-[sw]s[4gs]-[gs]
+8-[egqs]-[8fs][ad]5[ad]9[ad][rw]-s9
+d[6fs]-[0fs]-[fw][st]-[0ad][os]8[os]w[os]
+[tu]-w-[4gj]-[8gj]-[egjq]-f8[gj]5
+[dh]9[dh][rw]-[9h]h[6fj]-[dh]0-[fjtw]-
+[0dh][fj]8[dh]w[dh][ftu]-[fw]f[4gs]-[8gs]-
+[egs]q-[8fs][adg]5-[fs]9-[adrw]-[9s]s
+[6p]-0-[gtw]-[0f]-8-[gw]-[fstu]-
+[dw]s[4qs]-[ad]8-[adeq]--5-
+9-[fs][rw]-ds[6s]-[0fs]-[efst]--
+8-[sw]-[fstu]-s-[4ad]-8-
+[adeq]--[5ad]-[9os]-[rw]-[fs]-6-
+[0os]-[et]-[ao]-8-[osw]-[fstu]-
+ds[4qs]-[8ad]-[adeq]--5-9-
+[frsw]-ds[6s]-[0fs]-[efst]--
+8-[sw]-[fstu]-s-[4ad]-8-
+[adeq]--[5ad]-[9os]-[hrsw]-[gs]-6-
+[0fs]-[et]-[fs]-8-[adw]-[ostu]--
+[29fo]6----5[di]9w----
+6[0fo]e----
+8[dk]wt--[fl]--2[fo]69-[hs]--
+5[9di]w--[fo]--6s[0e]p-
+pp-h-g-f-d
+s[4gs]-[gs]8-[egqs]-[8fs][ad]5[ad]9[ad]
+[rw]-[9s]d[6fs]-[0fs]-[fstw]-[0ad][0os]8
+[os]w[os][tu]-[sw]s[4gs]-[8gs]-g[eqs]-
+[8fs][ad]5[ad]9[ad][rw]-[9s]d6[fs]-[0fs]-
+[fstw]-[0ad][0os]8[os]w[os][tu]-w-
+[4gj]-[gj]8-[egjq]-[8f][gj]5[dh]9[dh][rw]-
+[9h]h[6fj]-[0dh]-[fjw]t-[0dh][fj]8
+[dh]w[dh][ftu]-[fw]f[4gs]-[8gs]-[egqs]-f
+[8s][ad]5-[9fs]-[drw]a-[9s]s[6jp]-0
+[ho][tw]-[0gi]-8-[fuw]-[ftu]-w-
+[2d]f[6f]-f[8q]-[6f]-[2f]-[6f]-[hq]8
+f6-[5h]j[9f]-[frw]-[9f]-[5f]-
+[9d]-[rw]-9-[3h]jf7-[9fw]-[7f]-
+[3f]-[7f]-[9hw]f7-[6p]-0[ps]
+[tw]-[0ad]-6[fs]0-[dhtw]-0-2-
+6-[48q]-[6gj]-[2fh]-[6dg]-[fs][8q]-
+[6fs]-5-[ad]9-[rw]-[9dgj]-[fh]5-[9dg]-
+[afrw]-[9af]-3-7-[9w]-[7os]-
+[ad]-[fs]7-[79osw]-[ad]7-6-[0os]-[tw]-
+[ad]0-6-[0fs]-[ostw]-[0ad]-[os]-
+f-f-f-d-dd-d-
+s-f-f-f-d-df-
+d-s[4gs]-[8gs]-[egqs]-[fs]8[ad]
+5[ad]9da[rw]-[9s]d6[fs]-[0fs]-[fstw]-
+[0ad][0os] 8[os]w[os][tu]-[sw]s[4gs]-
+[8gs]-[egqs]-[8fs][ad] 5a9[ad][rw]-[9s]
+d[6fs]-[0fs]-[fstw]-[0ad][0os]8[os]wos
+[tu]-w-[4gj]-[gj]8-[egjq]-[8f][gj]5
+[dh]9[dh][rw]-[9h]h[6fj]-[0dh]-[fjtw]-
+[0dh][fj] 8[dh]w[dh][ftu]-[fw]f[4gqs]-[8gs]-
+g[eqs]-[fs]8[ad]5-[9fs]-[adrw]-[9s]s
+6[jp]-0[ho][tw]-[gi]0-8-[fuw]-[ftu]-
+w-[4gs]-g[8s]-[egqs]-[8fs][ad]5-
+9-[rw]-9-[6fs]-[0fs]-[fstw]-[0ad]
+[os]8-w-[hstu]-w-[4gs]-[8gs]-
+[egqs]-[48fs][ad]5-9-[rw]-9-[6fs]-
+[0fs]-[fstw]-[0ad][os]8-w-[tu]-
+w-[4gs]-[8gs]-[egs]q-[8fs][ad]5-
+9-[rw]-9-6[fs]-[0fs]-[fstw]-[ad]0
+[os]8-w-[hs][tu]-w-[4gs]-[gs]8-
+[egqs]4-[8fs][ad]5-9-[rw]-95 [6fs]-
+[0fs]-[fstw]-[0ad][os]8-w-[tu]-
+w 2[6t]i-[it]-[it]-[tu] 5[9ry]-[ry]-
+[ry]-[tw] 6[tu]0e [tu]-[tu]-[ry] 1
+[tw][58]-[tw]-[rw]-[tw]8 2[6it]-[it]-[it]-
+[tu] 59[ry]-yr-[ry]-[tw] 6ut[0e] 
+[tu]-[tu]-yr 1[5tw]-[tw]-[rw]-[tw]----
+            ]]
+        },
+        ["LOVELY BASTARDS"] = {
+            Normal = [[
+[kQrY]
+k-k jj[ruw]--hjk
+[tuw]--fdf[eIt]--hjk
+[QrY]--kzk[ruw]--hjk
+[tuw]--hGh[9Qt]--
+[kQrY] kk-jj[ruw]--hjk
+[tuw]--fdf[eIt]--hjk
+[QrY]--kzk[ruw]--hjk
+[tuw]--hGh[9Qt]--[9ht] 
+[7p]pp[7p]p[7p]p[7p]p[7p]pa[7a][7a]a[7a][7a]aa[7a]
+[1a]aa[1a]a[8a]a[1a]a[6a]ap[6p][6p]pp6[6p]pp[6p]
+[7p]pp[7p]p[7p]p[7p]p[7p]pa[7a][7a]a[7a][7a]aa[7a]
+[1a]aa[1a]a[8a]a[1a]a[6a]ap[6p][6p]pp6[6p]pp[6p]
+[7k]k 7[7k] [7j][3j] 33 0[3h]j[3k]
+1-18f[1d][6f] 66 6[6h]j[6k]
+7-77k[7z][3k] 33 0[3h]j[3k]
+1-18h[1G][6h] 66 66 6
+[7k] k[7k]7 [7j][3j] 33 0[3h]j[3k]
+1-18f[1d][6f] 66 6[6h]j[6k]
+7-77k[7z][3k] 33 0[3h]j[3k]
+1-18h[1G][6h] 66 66h6
+            ]]
+        },
         ["JUDAS x GOJO vs SUKUNA"] = {
             Hard = [[
 [t8(W] y Y i [o4%8] 
@@ -1784,6 +1969,15 @@ h
         }
     },
     Short = {
+        ["Deslocado"] = {
+            Normal = [[
+G g - D S - aP - I- o-  O
+OOOOOP  - O - 
+OOOOOOOOP-S- OP - O
+II-OP-  Ii- OP- II- OP- Ia- PO
+IPTO- I - OO - IPTO - I
+            ]]
+        },
         ["Rush E"] = {
             Normal = [[
 u u u u u u u u u u u u u u u u u u u 6 8 3 8 [u6] 8 3 8
