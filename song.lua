@@ -1,6 +1,124 @@
 
 return {
     Main = {
+        ["Orange (オレンジ)"] = {
+            Normal = [[
+[uro0] u I o a p y u [uto8] w w t u 
+ [ypI9] y y y [te] [yr] t r [woa95] [pQI9$] 
+ r [thf8] [t0] t [wut] o [jIG9] Q [yeI] u u u 
+ [ydG7] [y9] y 
+[yrQ] p [oha0] w [uro] p a [slhf8] 
+w t [wu] o u [o7] u [a6] 0 [utso] 
+a p 6 [oa9] 9 [oa] 9 [oa] [pI9] 
+Q e y o I y e w Q 9 6 [o1] [uo]
+ [hI] [wtso0] o h a [pG2] o p
+  [yjeQ] I o [paI7] a d [rpkQ9]
+  a [phfa3] o I o [wr0] u o 
+  [aI] [of6] [uo] o [se80] 
+  o o o [dI2] [yI] I [ypeQ9] 
+  t [ysro5] a [wa9] p [da] 
+  l k [h5] k o [sI92] p o 
+  [pI] [96$] I [p1] [oI] 
+  [pYI7] [pI7(] Y [p$] a 
+  [ph3] [oa] [IG] [po]
+  [f750] [uo] [d2]
+I [sof81] [ws80] d [uf] 
+h [wto0] u [wso0] d [uf8]
+ h [hdD81] [wsd8(] [oh] [wt(]
+o [wP(] d [aD8] [ph] [w5]
+[e6] [r7] [t8] [y9] [u0] 
+[QI] [wo] [pe] [ra] [ts]
+[yd] [uf] [IG] [oh] [pj] 
+[ohd92] [ohd92] [dIG92] 
+y [yoeQ] [p9] [skhd5] 
+[wrkhd9] a a [ywrkhd]
+[wvrh] 9 o [paGD7] p p 
+[raQGD(] a a [rjbYQ] [rQGC] 
+( o [shfa3] [wurhfa] a a 
+[wurhfa] [wujb] [nk0] o 
+[ypmle9] [ype9] p z da 
+[wojb95] o [slhfd8] w 
+[ts] y [ua] y [ts] w 
+[zjdG9] e [yC] [ub] 
+[zu] [yd] [ed] [zd7]
+ 9 [fQ] [rd] [yjb] 
+ [rI] Q [o9] [xhf0] 
+ w r u o u u [sfa1] 
+ p p [wt0] u [pod2] 
+ I [yueQ] I [oka5]
+  [wr9] [ywrGC] [wur] 
+  [u9] [ka1] [sl] [sl] 
+  [wt0] [wtnk0] [ml]
+   [ml] [wt] 0 [wtsoY8]
+    [wtoY8] u u p o 
+    I o [zokhd5] j 
+    k z v b z
+            ]]
+        },
+        ["Homage Funk"] = {
+            Normal = [[
+d f 
+h j h g f d s8 P p 
+[5o] [8p] [^P] [6s] [5d] [4s] d g [4h] 
+[8g] [0f] d9 [8s] [^P] p o [4i] 
+[^o] [6p] [5P] [4s] P3 s f [6g] [^f] 
+[3d] [6S] [3a] [6p] o i [3u] [6y] [5u] 
+4i^ [3o] [2p] a S [6d] [6f] [2g] 
+[6h] j6 [2k]hL z [6x]h [2p] p2 [2p]-
+[5P]--[5p] [5o] [5o] 5i-
+[8u]-u-y8 [8t] [8y] [8u]-
+p4-p-[4p] [4u] [4u] [4u]-y^--
+[^t] e^ e^ [^w]-[3o]--
+[3gi] [3u] [3u] [3y]-[6T]--
+e6 [6r] [6e] [6u]-y2--
+[2y] [2T] [2T] [2y]-[1y]--1 
+1 1 [1p]-[5P]-5 p 
+[5o] o [5i]-[1u]-u1 y [1t] 
+y [1u]-[4p]-4 p [4u] u 
+u4-[^y]-^ t [^e] e 
+[^w]-o3-3 i [3u] u [3y]-
+[6T]-6 e [6r] e76u-
+[2y]-2 y [2T] T [2y]-
+[1y]-1-1-[1p]-p----
+P5--
+[5p] o5 [5o] [5i]-u8--
+[8y] [8t] y8 [8u]-[4p]-p-[4p] 
+[4u] [4u] [4u]-[^y]--[^t] 
+[^e] [^e] [^w]-[3o]--[3gi] [3u] 
+[3u] [3y]-[6T]--[6e] [6r] [6e] 
+u6-[2y]--y2 [2T] [2T] 
+[2y]-y1--[18] 1 1 [1p]-
+[5P]-5 p [5o] o [5i]-
+[1u]-u1 y [1t] y [1u]-
+[4p]-4 p4 [4u] u [4u]-[^y]-
+^ t [^e] e [^w]-[3o]-
+3 i [3u] u [3y]-[6T]-
+6 e [6r] e [6u]-y2-2 
+y [2T] T [2y]-[1y]-1-
+1-1-d f h j 
+h g f d s8 P p [5o] [8p] 
+P^ [6s] [5d] [4s] d g [4h] [8g] [0f] 
+d9 [8s] [^P] p o 4i [^o] [6p] 
+[5P] [4s] P3 s f [6g] [^f] [3d] [6S] 
+[3a] [6p] o i [3u] [6y] u5 4i^ [3o] 
+[2p] a S [6d] [6f] [2g] [6h] j6 
+[2k]h[jL] z [6x] p2 [2p] [2p]-[5P]--
+[5p] [5o] [5o] [5i]-[8u]--
+[8y] [8t] [8y] u8-[4p]--
+p4 [4u] [4u] [4u]-y^--
+[^t] e^ e^ [^w]-[3o]-o-[3gi] 
+[3u] [3u] [3y]-[6T]--e6 
+[6r] [6e]7[6u]-y2--[2y] [2T] 
+[2T] [2y]-[1y]--1 1 1 
+p1-[5P]-5 p [5o] o 
+[5i]-1u-u1 y 1t y [1u]-
+p4-4 p [4u] u u4-
+u[^y]-^ t [^6e] [6e] [^w]-
+[3o]-3 i [3u] u [3y]-[6T]-
+6 e [6r] e [6u]-[2y]-
+2 y [2T] T [2y]-[2y]
+            ]]
+        },
         ["Bazooka"] = {
             Normal = [[
 [aDW]----
