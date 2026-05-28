@@ -1,6 +1,104 @@
 
 return {
     Main = {
+        ["Runaway - Kanye West"] = {
+            Normal = [[
+c c c g
+x x x f
+z z z d
+J J j c
+[4e] q e t [ec] q e t
+[4e] q e t [ec] q e t
+[4e] q e t [ec] q e t
+[4e] q e t [eg] q e t
+[3e] 0 e t [ex] 0 e t
+[3e] 0 e t [ex] 0 e t
+[3e] 0 e t [ex] 0 e t
+[3e] 0 e t [ef] 0 e t
+[2q] 9 q e [qz] 9 q e
+[2q] 9 q e [qz] 9 q e
+[2q] 9 q e [qz] 9 q e
+[2q] 9 q e [qd] 9 q e
+q 9 q E [Jq] 9 q E
+q 9 q E [Jq] 9 q E
+q 9 q E [qj] 9 q E
+q 9 q E c
+p
+p [4qg] s e [Pt]
+e [qp] e [tp] [eg] [qs] e [Pt]
+e [qp] e [tp] [30f] d [ef] t
+e 0 e t e 0 e t
+e 0 [ej] [tj] [ej] [0h] [eh] [th]
+e [0g] e [th] e 0 [eg] t
+[eh] 0 [ej] [th] [29g] q e
+q 9 q e q 9 q e
+q 9 [qg] e [qg] 9 s q [es]
+q 9 q [ep] [qs] 9 [qp] e
+[qs] 9 [qp] [Ped] ^ g q E
+q 9 q E q 9 q E
+q 9 [qg] [Eg] [qg] [9s] q [Es]
+q 9 [qp] E [qs] 9 [qp] E
+[qs] 9 [qd] [Es] [4q] [ei] [qt]
+[ei] [qts] [eis] [qts] [eis] [qt] [eis] [qts]
+[eig] [qt] [eis] [qt] [eip] [qt] [ei] [qt]
+[ei] [qts] [eis] [qts] [etis] [eis] [qts]
+[eig] [ipf] [tid] [30f] [eu] [0t]
+[eu] [0tf] [eugj] [0tsf] [eugj] [0t] [eugj] [0tfh]
+[eugj] [0t] [eufh] [0t] [eudg] [0t] [eu] [0t]
+[eu] [0td] [eupdg] [0td] [eupdg] [0t] [eupdg] [0td]
+[eupfh] [0t] [eupfh] [0tg] [29] [qy] [9e]
+[qy] [9ed] [qypdg] [9ed] [qypdg] [9e] [qypdg] [9ed]
+[qypfh] [9e] [qypfh] g [qy] [9e] [qy] [9e]
+[qy] [9ed] [qypdg] [9ed] [qypdg] [9e] [qypdg] [9ed]
+[qypfh] [9e] [Pqyfh] [9eg] ^ [qy] [E9]
+[qys] [E9s] [qys] [E9] [qys] [E9] [qyp] [E9]
+[qyp] s s s
+s p [od]
+[ps] [4e] q e t
+[ec] q e t [4e] q e t
+[ec] q e t [4e] q e t
+[ec] q e t [4e] q e t
+[eg] q e t [3e] 0 e t
+[ex] 0 e t [3e] 0 e t
+[ex] 0 e t [3e] 0 e t
+[ex] 0 e t [3e] 0 e t
+[ef] 0 e t [2q] 9 q e
+[qz] 9 q e [2q] 9 q e
+[qz] 9 q e [2q] 9 q e
+[qz] 9 q e [2q] 9 q e
+[qd] 9 q e q 9 q E
+[Jq] 9 q E q 9 q E
+[Jq] 9 q E q 9 q E
+[qj] 9 q E q 9 q E
+g p p [4qg] s e [Pt]
+e [qp] e [tp] [eg] [qs] e [Pt]
+e [qp] e [tp] [30f] d [ef] t
+e 0 e t e 0 e t
+e 0 [ej] [tj] [ej] [0h] [eh] [th]
+e [0g] e [th] e 0 [eg] t
+[eh] 0 [ej] [th] [29g] q e
+q 9 q e q 9 q e
+q 9 [qg] e [qg] 9 s q [es]
+q 9 q [ep] [qs] 9 [qp] e
+[qs] 9 [qp] [Ped] ^ g q E
+q 9 q E [4q] [ei] [qt]
+[ei] [qts] [eis] [qts] [eis] [qt] [eis] [qts]
+[eig] [qt] [eis] [qt] [eip] [qt] [ei] [qts]
+[eis] [qts] [etis] [eis] [qts] [eig]
+[ipf] [tid] [30f] [eu] [0t] [eu] [0tf]
+[eugj] [0tsf] [eugj] [0t] [eugj] [0tfh] [eugj] [0t]
+[eufh] [0t] [29dg] [qy] [9e] [qy] [9e]
+[qy] [9ed] [qypdg] [9ed] [qypdg] [9e] [qypdg] [9ed]
+[qypfh] [9e] [qypfh] g [qy] [9e] [qy] [9e]
+[qy] [9ed] [qypdg] [9ed] [qypdg] [9e] [qypdg] [9ed]
+[qypfh] [9e] [qypfh] g [qy] [9e] [qy] [9e]
+[qy] [9ed] [qypdg] [9ed] [qypdg] [9e] [qypdg] [9ed]
+[qypfh] [9e] [Pqyfh] [9eg] ^ [qy] [E9]
+[qy] [E9] [qy] [E9] [qyl] [E9] l [qy] l [E9]
+[qyl] [E9] [qyj] [E9] [qy] [E9] j
+c c c g
+            ]]
+        },
         ["Let it go"] = {
             Normal = [[
 [ek] l f k-l - 
