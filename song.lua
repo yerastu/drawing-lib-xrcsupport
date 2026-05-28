@@ -1,6 +1,29 @@
 
 return {
     Main = {
+        ["gymnopedie"] = {
+            Normal = [[
+4 [etu] 1 [wru] 4 [etu] 1 [wru]
+4 [etf] h [1g] [wrf] a [4p] [eta] s [1o] [wru] [4u] [etu] 1 [wru] 4 [etu] 1 [wru]
+4 [etf] h [1g] [wrf] a [4p] [eta] s[1o] [wru]
+[3a] [wru] [6f] [etu] [2y] [qe] 2 [eti] 1 [(wt]
+[5o] [Ewp] P [1d] [qes]
+p [1s] [8qP] p [1s] [^9w]
+1 [^0w] s[1d] [wED] g [1h] [wEP] s
+[1d] [8qs] p [1s] [^9w]
+1 [^0w] s [2g] [eyi] [3f] [wru] [6p] [eto]
+p [2a] [wrs] d [2a] [wrs] d [2u] [6wt] [9ei] [5qEP]
+[18ts] 4 [etu] 1 [wru] 4 [etu] 1 [wru]
+4 [etf] h [1g] [wuf] a [4p] [eta] s [1o] [wru]
+[4u] [etu] 1 [wru] 4 [etu] 1 [wru]
+4 [etf] h [1g] [wuf] a [4p] [eta] s [1o] [wru]
+[3a] [wru] [6f] [etu] [2y] [qe] 2 [eti] 1 [(wt]
+[5o] [Ewp] P [1d] [qys] p [1s] [8yP] p [1s] [^9t]
+1 [^0t] s [1d] [wYD] g [1h] [wEP] s [1d] [8ys] p [1s] [^9t]
+1 [^0t] s [2g] [ey] [2D] [wtY] [2p] [wYP] D [2d] [Eos] P [2d [wos] P
+[2Y] [6wt] [9ei] [5qEP] [18ts]
+            ]]
+        },
         ["Runaway - Kanye West"] = {
             Normal = [[
 c c c g
