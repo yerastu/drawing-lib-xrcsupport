@@ -1,6 +1,216 @@
 
 return {
     Main = {
+        ["JUDAS x GOJO vs SUKUNA"] = {
+            Hard = [[
+[t8(W] y Y i [o4%8] 
+i Y y t [o8(w] Y t 
+[i^9q] y E [t%8(] 
+y Y i [o4%8] i Y y 
+t [o8(w] Y t [i^9q] 
+y E [t18] s [t4] O 
+o [t18] s [t4] O o 
+[t18] s [18] [t%W] 
+O o [ts18] [sl] 
+[ts4] [OH] [oh] 
+[ts18] [sl] [ts4] 
+[OH] [oh] [ts18] 
+[sl] [18] [ts%W] 
+[OH%W] [oh5w] [Ys1@8] 
+[Ys] [Ys1@8] [Ys]
+[Ys4%] [Ys] [Ys4%] 
+[Ys] [Ys%8W] [%8W] 
+[^9E] [^9E] [Ys] 
+[Ys1@8] [Ys] [Ys1@8] 
+[Ys] [Ys4%] [Ys] [Ys4%]
+[Ys] [Ys%8W] [%8W] [^9E] 
+[^9E] [Ys] [Ys1@8] [Ys]
+[Ys1@8] [Ys] [Ys4%] [Ys]
+[Ys4%] [Ys] [Ys%8W] 
+[%8W] [^9E] [^9E] [Ys] 
+[Ys1@8] [Ys] [Ys1@8] 
+[Ys] [Ys4%] [Ys] [Ys4%] 
+[Ys] [Ys%8W] [%8W] [^9E]
+[^9E] [sl1@8] [sl] [%4] 
+[oh] [OH%8W] [OH] [oh^9E] 
+[sl1@8] [sl] [%4] [oh] 
+[OH%8W] [OH] [oh^9E] Y 
+[YD1] [YD] [(wY1] [4%] 
+[(Y4%] [(Y] [(Y%8W] [(Y%8W] 
+[^9E] [^9E] [sl1@8] [sl] 
+[%4] [oh] [OH%8W] [OH] [oh^9E] 
+[sl1@8] [sl] [%4] [oh] [OH%8W] 
+[OH] [oh^9E] Y [YD1] [YD] [(wY1] 
+[4%] [(Y4%] [(Y] [(Y%8W] [(Y%8W] 
+[^9E] [o^E] [OsH8(W] [OsH] 
+[OsH8(W] [OsH] [OsH8(W] 
+[osh8(W] [isg] [Pg9qE]
+[iPg] [iPg9qE] [YPD] 
+[iPg9qE] [tPs9qE] [tPs] 
+[osh8(w] [osh] [osh8(w] 
+[osh] [PsJ8(w] [8(w] [shl]
+[ig(wE] [oh] [(wE] [oh^E] 
+[OsH8(W] [OsH] [OsH8(W] 
+[OsH] [OsH8(W] [osh8(W] 
+[isg] [Pg9qE] [iPg] [iPg9qE]
+[YPD] [iPg9qE] [tPs9qE] [tPs]
+[osh8(w] [osh] [osh8(w] 
+[osh] [PsJ8(w] [8(w]
+[shl] [ig(wE] [oh]
+[(wE] [^E] [tOs8(W]
+[yOd] [YOD] [iOg8(W] 
+[osh4%8] [isg] [YsD] [ysd] 
+[tos4%8] [osh8(w] [YoD] [tos] 
+[8(w] [isg^9q] [yid] [EiP] [^9q] 
+[tOs8(W] [yOd] [YOD] [iOg8(W]
+[osh4%8] [isg] [YsD] [ysd] 
+[tos4%8] [osh8(w] [YoD] 
+[tos] [8(w] [isg^9q] [yid]
+[EiP] [^9q] [t1@8] t t
+t t t t t t t t t t t t
+t [t1@8] t t t t t t t
+t t t t t t t t [ts] 
+[8(Wt] [yd] [YD] [yd4%8q]
+[EP] [wo] [ts58(w] [ts] 
+[ts] [YD] [oh] [h^(wE] [ig] 
+[ig] [oh] [ig] [tOs%8(W] [tOs] 
+[yOd] [YOD] [yd4%8q] [EP] [wo] 
+[tos58(w] [tos] [tos] [YoD] [oh]
+[idg4^9q] [idg] [odh] [idg] [oh5w] 
+[sl8t] [PJ^E] [ohv] [OsH8(W] [OsH] 
+[OsH8(W] [OsH] [OsH8(W] [osh8(W] [isg] 
+[Pg9qE] [iPg] [iPg9qE] [YPD] [iPg9qE] 
+[tPs9qE] [tPs] [osh8(w] [osh] [osh8(w] 
+[osh] [PsJ8(w] [8(w] [shl] [ig(wE] [oh]
+[(wE] [oh^E] [OsH8(W] [OsH]
+[OsH8(W] [OsH] [OsH8(W]
+[osh8(W] [isg] [Pg9qE] 
+[iPg] [iPg9qE] [YPD] 
+[iPg9qE] [tPs9qE] [tPs]
+[osh8(w] [osh] [osh8(w] 
+[osh] [PsJ8(w] [8(w] [shl]
+[ig(wE] [oh] [(wE] [^E] [tOs8(W] 
+[yOd] [YOD] [iOg8(W] [osh4%8] [isg] 
+[YsD] [ysd] [tos4%8] [osh8(w] [YoD] 
+[tos] [8(w] [isg^9q] [yid] [EiP] 
+[^9q] [tOs8(W] [yOd] [YOD] [iOg8(W] 
+[osh4%8] [isg] [YsD] [ysd] [tos4%8] 
+[osh8(w] [YoD] [tos] [8(w] [isg^9q] 
+[yid] [EiP] [^9q] [ts18] [sl18]
+[ts4] [OH4] [oh] [ts18] [sl18] 
+[ts4] [OH4] [oh] [ts18] [sl18] 
+[ts4] [OH4] [oh] [ts18] [sl] [18] 
+[ts%W] [OH%W] [oh5w] [ts%W] [%W]
+[OH%W] [oh] [%W] [ts%W] [OH] [oh5w]
+            ]]
+        },
+        ["JUDASD X GOJO vs SUKUNA"] = {
+            Normal = [[
+[%s]-d-D-g-
+[4h]-g g D-d-
+[8h]-D-s--g 
+^ d-P----
+[%s]-d-D-g D 
+[4h]-g g D-d-
+[18h]-D-s--g 
+[^] d-P----
+[8s]-[8l]-[8s] sH[8h]-
+[8s]-[8l]-[8s] sH[8h]-
+[8s]-[8l]-[8s] sH[8h]-
+[8s]-[8l]-[8s]-H[8h]-
+1-8-@-4 $ 5
+1-8-@-4 $ 5
+[1s]-8-@-4 $ 5
+[%OW][%OW][%OW][%OW] 
+[%OW] [%OW][%OW][%OW][%OW] [%OW] 
+[8s]-[8l]-[(s] s[Hq] [(h] 
+[8s]-[8l]-[(s] s[Hq] [(h] 
+[8s]-[8l]-[(s] s[Hq] [(h] 
+[%s]%%[%l]-[%s]%%H%h-
+[8D] D [8D] D [(D] DqDQDw
+[8D]-8-(-q Qdw
+[8D] D [8D] D [(D] DqDQDw
+[8D]-8-(-q Qdw
+[8D] D [8D] D [(D] DqDQDw
+[8D]-8-(-q Qdw
+[8D] D [8D] D [(D] DqDQDw
+[%D]%%% % 8888 8 
+[%l]-[%] h [%J] J [%h]-
+[4l] l [4] h [4J] J [4h] d 
+[18D]D D[18]-[18]-[18D] D 
+[^D]-D[^]-[^]-[^]-
+[%l]-[%] h [%J] J [%h]-
+[4l] l [4] h [4J] [DJ] [4Dh] d 
+[18D]-D[18]-[18]-[18D] D 
+[^D]-D[^]-[^]-[^h]-
+[%DHs] H [%DHs]-[%DHs]-[%h] [dgP] 
+[^dP] g [^dP] D [^dhP] g [^DP]-
+[(@DhP] h [(@DhP] h [(@DhJ]-[(@l] [dgP] 
+[18dP] [Dhs] [18]-[18]-[18DHs]-
+[%DHs] H [%DHs]-[%DHs]-[%h] [dgP] 
+[^dP] g [^dP] D [^dhP] g [^DP]-
+[(@DhP] h [(@DhP] h [(@Dhl]-[(@J] [dgP] 
+[18dP] [Dos] [18]-[18]-[18]-
+[%s]-d-D-g D 
+[4h]-g g D-d-
+[18h]-D-s--g 
+[^] d-P----
+[%s]-d-D-g D 
+[4h]-g g D-d-
+[18h]-D-s--g 
+[^] d-P----
+[8s]-[8l]-[(s] s[Hq] [(h] (
+[8s]-[8l]-[(s] s[Hq] [(h] (
+[8s]-[8l]-[(s] s[Hq] [(h] (
+[%s]%%[%l]-[%s]%%H%h-
+[8D] D [8D] D [(D] DqDQDw
+[8D]-8-(-q Qdw
+[8D] D [8D] D [(D] DqDQDw
+[8D]-8-(-q Q w
+[8D] D [8D] D [(D] DqDQDw
+[8D]-8-(-q Q w
+[8D] D [8D] D [(D] DqDQDw
+[%D]%%% % 8888 8 
+[%l]-[%] h [%J] J [%h]-
+[4l] l [4] h [4J] J [4h] d 
+[18D]D D[18]-[18]-[18D] D 
+[^D]-D[^]-[^]-[^]-
+[%l] l [%] h [%J] J [%h]-
+[4l] l [4] h [4J] [DJ] [4Dh] d 
+[18D]-D[18]-[18]-[18D] D 
+[^D]-D[^]-[^]-[^h]-
+[%H] H [%H]-[%H]-[%h] g 
+[^] g [^d] D [^h] g [^D]-
+[(@h] h [(@h] h [(@J]-[(@l] g 
+[18] h [18]-[18]-[18h]-
+[%H] H [%H]-[%H]-[%h] g 
+[^] g [^d] D [^h] g [^D]-
+[(@h] h [(@h] h [(@l]-[(@J] g 
+[18] D [18]-[18]-[18]-
+[%s]-d-D-g D 
+[4h]-g g D-d-
+[18h]-D-s--g 
+[^] d-P----
+[%s]-d-D-g D 
+[4h]-g g D-d-
+[18h]-D-s--g 
+[^] d-P----
+[18]-(1 ^ 1 5 1^-
+[18]-(1 ^ 1 5 1^-
+[18]-(1 ^ 1 5 1^-
+[18]8181(11(11(([(1](-
+[18]-(1 ^ 1 5 1^-
+[18]-(1 ^ 1 5 1^-
+[18]-(1 ^ 1 5 1^-
+[18]8181(11(11(([(1](-
+[%s]----d D 
+[4d] P----P 
+[8s] s-s-D-h 
+^ g g-h g g-
+[%s]-s-d-D d 
+4 P----P
+            ]]
+        },
         ["Drowning Love"] = {
             Normal = [[
 6 0 e r t o 5 w r t
