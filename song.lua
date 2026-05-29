@@ -1,6 +1,117 @@
 
 return {
     Main = {
+        ["Comfort Chain"] = {
+            Normal = [[
+[tl] u o u 
+s k [ok] l 
+[tk]-h-
+[tj] i p i 
+s h [pg] j 
+[th] u o u 
+u-[Oa]-
+[es] t u t 
+e t [tp] [ps] 
+[of]-[id]-
+[wa] r y r 
+W u [yf] [ra] 
+[es] t u [td]s
+[wa] [us] [id] [to] 
+[th] o [pg] t 
+[pg] t [of] t 
+[wd] r y [rf]d
+[WS] [rd] [yf] [ra] 
+[ed] [ts] u t 
+e [ts] [uf] [pj] 
+[Il]---
+o-
+[tf]--
+[wd]--
+[tf] y [us] i 
+[of] t [pg] r 
+[th] u [ij] [uh] 
+[pg] t [of] t 
+[rd] w [ro] t 
+[rd] w [tf] w 
+[yg] W [uH] [Wg] 
+[yf] W [rd] W 
+[es] r t y 
+u e [uo] e 
+[ts] y [ud] i 
+[of] t [pg] t 
+[of]--
+d--
+[qs] e t e 
+i t e q 
+[qd] W t W 
+i t W q 
+[ts] u o t 
+u o s u 
+o s f o 
+s f h k 
+[tl]-h--
+l-
+[wk]-h--
+k-
+[qj]-g--
+d-
+[tf]---
+f-
+[eg] t [id] t 
+a-g-
+[Wa] y [es] t 
+u-[os]-
+[us] [th] [uh] t 
+o t [us] t 
+[es] [tj] [ij] t 
+p t [id] t 
+[rd] [yk] [ok] y 
+a y [Of] r 
+[tf] [ul] [pl] u 
+s j [ak] [pl] 
+[Ix]-y-
+[Iz]-l-
+z----
+
+[tf] y [us] i 
+[of] t [pg] r 
+[th] u [ij] [uh] 
+[pg] t [of] t 
+[rd] w [ro] t 
+[rd] w [tf] w 
+[yg] W [uH] [Wg] 
+[yf] W [rd] W 
+[es] r t y 
+u e [uo] e 
+[ts] y [ud] i 
+[of] t [pg] t 
+[of]--
+d--
+[tf] y [us] i 
+[of] t [pg] r 
+[th] u [ij] [uh] 
+[pg] t [of] t 
+[rd] w [ro] t 
+[rd] w [tf] w 
+[yg] W [uH] [Wg] 
+[yf] W [rd] W 
+[es] r t y 
+u e [uo] e 
+[ts] y [ud] i 
+[of] t [pg] t 
+[of]--
+d--
+[qs] e t e 
+i t e q 
+[qd] W t W 
+i t W q 
+[ts] u o t 
+u o s u 
+o s f o 
+s f h k 
+l
+            ]]
+        },
         ["Runaway Aurora"] = {
             Normal = [[
 [9iy] [8tu] u i u t 
