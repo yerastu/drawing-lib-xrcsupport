@@ -1,6 +1,89 @@
 
 return {
     Main = {
+        ["Micheal Myers"] = {
+            Normal = [[
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+[3k] f f k f f k f l f 
+[5k] f f k f f k f l f 
+[%J] D D J D D J D k D 
+J D D J D D J D k D 
+[3k] f f k f f k f l f 
+[5k] f f k f f k f l f 
+[%J] D D J D D J D k D 
+J D D J D D J D k D 
+[2j] d d j d d j d J d 
+[4j] d d j d d j d J d 
+[$H] S S H S S H S j S 
+H S S H S S H S j S 
+[2j] d d j d d j d J d 
+[4j] d d j d d j d J d 
+[$H] S S H S S H S j S 
+H S S H S S H S j S 
+[6f] p p f p p f p g p 
+[8f] p p f p p f p g p 
+[9f] p p f p p f p g p 
+[0f] p p f p p f p g p 
+[6f] p p f p p f p g p 
+[8f] p p f p p f p g p 
+[9f] p p f p p f p g p 
+[0f] p p f p p f p g p 
+f p p f p p f p g p 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+[3k] f f k f f k f l f 
+[5k] f f k f f k f l f 
+[%J] D D J D D J D k D 
+J D D J D D J D k D 
+[3k] f f k f f k f l f 
+[5k] f f k f f k f l f 
+[%J] D D J D D J D k D 
+J D D J D D J D k D 
+[2j] d d j d d j d J d 
+[4j] d d j d d j d J d 
+[$H] S S H S S H S j S 
+H S S H S S H S j S 
+[2j] d d j d d j d J d 
+[4j] d d j d d j d J d 
+[$H] S S H S S H S j S 
+H S S H S S H S j S 
+[6f] p p f p p f p g p 
+[8f] p p f p p f p g p 
+[9f] p p f p p f p g p 
+[0f] p p f p p f p g p 
+[6f] p p f p p f p g p 
+[8f] p p f p p f p g p 
+[9f] p p f p p f p g p 
+[0f] p p f p p f p g p 
+[6f] p p f p p f p g p 
+[8f] p p f p p f p g p 
+[9f] p p f p p f p g p 
+[0f] p p f p p f p g p 
+[6f] p p f p p f p g p 
+[8f] p p f p p f p g p 
+[9f] p p f p p f p g p 
+[0f] p p f p p f p g p 
+f p p f p p f p g p 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f 
+k f f k f f k f l f
+            ]]
+        },
         ["God Level threat"] = {
             Normal = [[
 d s f [48] [48] q [48]
