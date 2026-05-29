@@ -1,6 +1,65 @@
 
 return {
     Main = {
+        ["Runaway Aurora"] = {
+            Normal = [[
+[9iy] [8tu] u i u t 
+y [9iy] [8tu] u i u t 
+[9iy] y [8tu] u i u t 
+y [9ipy] [8stu] u i u t 
+[9y] i o o p o o [8ot] u 
+[9y] i o o p o o o [8t] p u i u 
+[^Ey] i p p s s [q] P p o [8] i u 
+[^y] u i u y u [^i] 
+[9y] i o o O o o [8o] u 
+[9y] i o o p o o o o [8] p i u 
+[^y] i p s [qs] g s P p p [8o] i u 
+[^] y u i u y u [^i] u 
+[5iw] p o u i u y u [^Ei] p o p s p p 
+[q] p p s o o [8p] o s d p o i u 
+[^E] i p o u i p o u [^i] p o o p s p P p 
+[q] p g s P p [8] s P p s P p 
+[^] o p [^] s p s P p p o p 
+[5] P p P p [^] o 
+[9] p o p o o [8o] o t 
+[9y] i i i o p o o o [8] u u i u 
+[^y] y i p p s s [q] p P p o [8] u i u 
+[^u] y [ou] p o i o [^ip] [8] [dp] 
+[9dp] [dg] [fh] [gj] [fh] [dg] [gs] [8gs] [fp] p s p 
+[9dp] [dg] [fh] [gj] [fh] [dg] [gs] [8fs] [dg] s d 
+[^] o o o p p s p [qs] p o [8] o p o 
+[^p] [dgP] [fhs] [^dp] [dgP] [dp] [dgP] [dp] i 
+[5iw] p o u i u y u [^Ei] p o p s p p 
+[q] p p s o o [8p] o s d p o i u 
+[5] i p o u i p o u [^i] p o o p s p P p 
+[q] p g s P p [8] s p s P p 
+[^] o p o [^p] o p o p P P p 
+[q] g s P p [8] s p s d p 
+[^] s s p o [^p] o p o p P P p 
+[q] g s P p [8] s p s P p 
+[^p] o p [^] s p s P p o p 
+[5] P p P p [6] s s d 
+[5] g d s s g s d 
+[^f] d p s s p s 
+[q] s p s p s o o 
+[8o] i s s d [5] g f s 
+s s g s d [^d] f d s d 
+j g f g [q] s p 
+s p s o o [8o] p 
+s u [5i] p o u i u y u 
+[^i] p o p s p p [q] p g s P p 
+[8] s p s P p [^] o p o 
+[^p] o p o p P P p [q] g s P p 
+[8] s p s d p [^] s s p o 
+[^p] o p o p P P p [q] s s d g f 
+[8] f g f [^] d d s 
+[^] s p s p [q] s s d g f 
+[8] f g f [^] d g s 
+[^] g s g s [q] s s d g f 
+[8] f g f [^] d d s 
+[^] s p s p [5p] P p P p
+            ]]
+        },
         ["Micheal Myers"] = {
             Normal = [[
 k f f k f f k f l f 
