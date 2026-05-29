@@ -1,6 +1,26 @@
 
 return {
     Main = {
+        ["Set Fire to The rain"] = {
+            Normal = [[
+[6u] e t e u e t [8u] 
+u w t w u i u y 
+[5y] w r w y w r [9i] 
+i e y e i e y u 
+[6u] e t e u e t [8u] 
+u w t w u i u y 
+[5y] w r w y w r [9i] 
+i e y e i e y u 
+[6u] e t e u e t [8u] 
+u w t w u i u y 
+[5y] w r w y w r [9i] 
+i e y e i e y u 
+[6u] e t e u e t [8u] 
+u w t w u i u y 
+[5y] w r w y w r [9i] 
+i e y e i e y u
+            ]]
+        },
         ["Comfort Chain"] = {
             Normal = [[
 [tl] u o u 
