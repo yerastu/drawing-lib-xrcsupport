@@ -426,6 +426,15 @@ function MaQueen:CreateWindow(options)
 
 			local gbHandle = {}
 
+			function gbHandle:CreateContainer(height)
+				local container = Instance.new("Frame")
+				container.Size = UDim2.new(1, 0, 0, tonumber(height) or 100)
+				container.BackgroundTransparency = 1
+				container.ZIndex = 3
+				container.Parent = itemContainer
+				return container
+			end
+
 			function gbHandle:CreateLabel(text)
 				local lbl = Instance.new("TextLabel")
 				lbl.Size = UDim2.new(1, 0, 0, 16)
